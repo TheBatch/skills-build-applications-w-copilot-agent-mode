@@ -26,10 +26,11 @@ class WorkoutListCreateView(generics.ListCreateAPIView):
 
 @api_view(['GET'])
 def api_root(request, format=None):
+    codespace_url = "https://super-enigma-pqx97466xf664w-8000.app.github.dev"
     return Response({
-        'users': '/api/users/',
-        'teams': '/api/teams/',
-        'activity': '/api/activity/',
-        'leaderboard': '/api/leaderboard/',
-        'workouts': '/api/workouts/',
+        'users': f'{codespace_url}/api/users/',
+        'teams': f'{codespace_url}/api/teams/',
+        'activity': f'{codespace_url}/api/activity/',
+        'leaderboard': f'{codespace_url}/api/leaderboard/',
+        'workouts': f'{codespace_url}/api/workouts/',
     })
