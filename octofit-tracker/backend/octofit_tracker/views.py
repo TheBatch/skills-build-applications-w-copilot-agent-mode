@@ -26,7 +26,7 @@ class WorkoutListCreateView(generics.ListCreateAPIView):
 
 @api_view(['GET'])
 def api_root(request, format=None):
-    codespace_url = "https://super-enigma-pqx97466xf664w-8000.app.github.dev"
+    codespace_url = "https://supreme-zebra-xqjxr7rx5fv44r-8000.app.github.dev"
     return Response({
         'users': f'{codespace_url}/api/users/',
         'teams': f'{codespace_url}/api/teams/',
